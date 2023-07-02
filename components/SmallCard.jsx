@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 function SmallCard({ img, location, distance }) {
   return (

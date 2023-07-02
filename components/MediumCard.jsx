@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 function MediumCard({ img, title }) {
   return (
@@ -7,6 +7,7 @@ function MediumCard({ img, title }) {
         <Image
           src={img}
           layout="fill"
+          objectFit="cover"
           alt="Picture of the author"
           className="rounded-xl"
         />
