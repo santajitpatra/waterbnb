@@ -2,13 +2,12 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import InfoCard from "@/components/InfoCard";
+import MyMap from "@/components/MyMap";
 import { format } from "date-fns";
 import { useRouter } from "next/router";
 
 function search({ searchResults }) {
   const router = useRouter();
-
-  console.log(searchResults);
 
   const { location, startDate, endDate, numberOfGuests } = router.query;
 
@@ -50,6 +49,9 @@ function search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+        <section className="hidden xl:inline-flex xl:min-w-[550px]">
+          <MyMap searchResults={searchResults} />
         </section>
       </main>
       <Footer />

@@ -12,6 +12,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
+          priority
           className="rounded-2xl"
         />
       </div>
