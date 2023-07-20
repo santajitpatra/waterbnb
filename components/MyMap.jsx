@@ -25,7 +25,7 @@ const MyMap = ({ searchResults }) => {
     <Map
       {...viewState}
       // style={{     width: "100%", height: "100%" }}
-      mapboxAccessToken={process.env.ACCESS_TOKEN}
+      mapboxAccessToken="pk.eyJ1Ijoiam9obndpY2sxMDgiLCJhIjoiY2xrNThvNzl0MGg1djNwbzdjMXdnNWJ5YyJ9.gf-erqiX4jtPnMsHRnS_gA"
       mapStyle="mapbox://styles/johnwick108/clka3832k00oe01qj30388y6o"
       onMove={(evt) => setViewState(evt.viewState)}
       attributionControl={false}
